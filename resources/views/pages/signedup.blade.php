@@ -40,9 +40,7 @@
       font-family: sans-serif;
       font-size: larger;
     }
-    .td {
-      color: white !important;
-    }
+     
     #mainNav.navbar-scrolled .navbar-brand {
         color: #ffffff;
     }
@@ -69,9 +67,9 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
 		}
 	}
 	.imp_date{
-		color: #fff;
-		border-radius: 25px;
-		background-color: rgba(93, 173, 0, 0.5);
+		color: #000;
+		border-radius: 5px;
+		background-color: #cccccc;
 	}
 	.imp_date tr:first-child td{
 		border-top: none;
@@ -90,6 +88,9 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
 			padding-top: 72px;
 			padding-bottom: 0;
 		}
+	}
+	.border_table td{
+	border-top:none;
 	}
   </style>
 </head>
@@ -121,7 +122,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
             <a class="nav-link js-scroll-trigger" href="/submission">Submission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/committee">Committee</a>
+            <a class="active nav-link js-scroll-trigger" href="/committee">Committee</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#">Downloads</a>
@@ -158,7 +159,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
 					<!-- <tr><td>Pre -Registration and abstract Submission to Open : July 10, 2019</td></tr> -->
 				<!-- </table> -->
 			<!-- </div> -->
-          <!-- <!-- <p class="text-white-75 font-weight-bold mb-5"></p> -->
+          <!-- <!-- <p class="text-white-75 font-weight-bold mb-5"></p> --> 
           <!-- <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#home">Find Out More</a> --> 
         <!-- </div> -->
       </div>
@@ -168,137 +169,109 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
   <!-- Services Section -->
   <section class="page-section" id="home" style="padding: 3rem 0;">
     <div class="container">
-      <h1 style="text-align: center">Online Registration</h1>
-      <hr class="divider  my-4">  
-	  <br>
-	  <div class="row">
-	  <div class="col-md-2">&nbsp;</div>
-	  <div class="col-sm-8  " style="background-color: white; padding: 15px; border-radius: 10px; border: 1px solid #d6d6d6;">
-      <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
-				{{ csrf_field() }} 
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Name</label>
-				<div class="col-sm-4">
-				  <input type="text name="name" class="form-control"  ><br>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Designation</label>
-				<div class="col-sm-4">
-				  <input type="text" name="designation" class="form-control"  ><br>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Address</label>
-				<div class="col-sm-10">
-				  <input type="text" name="address" class="form-control"  >
-				</div>
-			</div>
-			<hr>
-			
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Institution</label>
-				<div class="col-sm-10">
-				  <input type="text" name="institution" class="form-control"  ><br>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">City</label>
-				<div class="col-sm-3">
-				  <input type="text" name="city" class="form-control"  ><br>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Pincode</label>
-				<div class="col-sm-2">
-				  <input type="number" name="pincode" class="form-control"  ><br>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Country</label>
-				<div class="col-sm-3">
-				  <input type="text" name="country" class="form-control"  ><br>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Mobile no</label>
-				<div class="col-sm-3">
-				  <input type="text" name="mobile" class="form-control"  ><br>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Email id</label>
-				<div class="col-sm-4">
-				  <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Participation category</label>
-				<div class="col-sm-4">
-				  <select name="category" class="form-control">
-					<option value="Student/Research">Student/Research</option>
-					<option value="Scholar/Faculty">Scholar/Faculty</option>
-					<option value="Scientist/ Industry">Scientist/ Industry</option>
-				  </select>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Participant type</label>
-				<div class="col-sm-4">
-				  <select name="participant_type" class="form-control">
-					<option value="Author of paper">Author of paper</option>
-					<option value="Delegate">Delegate</option> 
-				  </select>
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-4" for="name">Accommodation required</label>
-				<div class="col-sm-8">
-				  <label class="radio-inline"><input type="radio" name="accomadation" checked>Yes</label>&nbsp;
-					<label class="radio-inline"><input type="radio" name="accomadation">No</label>
-				</div>
-			</div>
-			<hr>
-			{{-- <div class="row">
-				<label class="control-label col-sm-2" for="name">Login id</label>
-				<div class="col-sm-4">
-				  <input type="text" class="form-control"  ><br>
-				</div>
-			</div> --}}
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Password</label>
-				<div class="col-sm-4">
-				  <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-				</div>
-			</div>
-			<div class="row">
-				<label class="control-label col-sm-2" for="name">Retype Password</label>
-				<div class="col-sm-4">
-				  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-				</div>
-			</div> 
-			<hr>
-			<div class="text-center">
-			<input type="submit" class="btn btn-primary" value="Submit"> 
-			</div>
-		 </form>
-      </div> 
-      </div> 
-      </div> 
- 
+	<div class="row ">
+        <div class="col-lg-2 "></div>
+        <div class="col-lg-10 ">
+      <!-- <h1 style="text-align: center">Committee</h1> -->
+      <!-- <hr class="divider  my-4">  -->
+      <div class="row justify-content-center">
+        <div class="col-lg-12">  
+            <table class="table border_table" 
+              <tbody><tr>
+                <td class="td">
+                    <h4 style="color:#26ad6d">Chief Patron </h4>
+                    <p><b>Dr. T.K. Shahal Hassan Musaliar</b><br>
+                        <font size="2"> <i>President, TKM College Trust </i></font></p>
+                    <hr>
+                    <h4 style="color:#26ad6d">Patrons</h4>
+                   <p>
+				   <b>Jb. T.K. Jalaluddin Musaliar</b><br> 
+				   <font size="2"> <i> Chairman, DST-FIST Committee </i></font><br> <br> 
+                    <b>JB. T.K. Jamaluddin Musaliar <br><br> 
+                    Dr. M.Haroon <br></b></p>
+					<hr>
+					
+					<h4 style="color:#26ad6d">Chairperson</h4> 
+                    <p><b>Dr. Smitha P.G</b><br>
+                      <font size="2"> <i> Principal</i></font></p> 
+                    <hr>
+					
+                    <h4 style="color:#26ad6d">Conference Advisor</h4>
+                    <p><b>Prof. Hashimudeen. A <br> </b></p>
+                    <hr>
+					
+                    <h4 style="color:#26ad6d">Conference Chair</h4>
+                    <p><b>Dr. S. Anas<br></b>
+                    </p> 
+                    <hr>
+					
+                    <h4 style="color:#26ad6d">Co-Chairs</h4>
+                    <p><b>Prof. Narayana Prasad M<br></b>
+                    </p>
+                    
+                    <p><b>Prof. N.K. Sajna <br></b>
+                    </p>
+					<hr>
+					
+                    <h4 style="color:#26ad6d">Conveners</h4>
+      
+                   <p> 
+				   <b>Dr. P.K. Manoj  </b><br><font size="2"> <i> Conference Papers  Management</i></font><br><br>
+                    <b>Dr. Sumalekshmy S  </b><br><font size="2"> <i> Govt. Funding</i></font><br><br>
+                    <b>Prof. Adersh V.K  </b><br><font size="2"> <i> Sponsorship</i></font><br><br>
+                    <b>Prof. Aparna L.R 	</b><br><font size="2"> <i> Finance</i></font><br><br>
+                    <b>Dr. Mohamed Musthafa. K </b><br><font size="2"> <i> Printing and Publishing</i></font><br> </p>
+                </td>
+                <td class="td">
+      
+                                                                
+                    
+                    <h4 style="color:#26ad6d">Advisory Committee</h4> 
+                    
+                    <!-- Prof. Yamaguchi,Tokyo Tech, Japan<br> -->
+                    <b>Dr. Min Jae Ko</b><br><font size="2"> <i> Hanyang University, South Korea</i></font><br><br>
+                    <b>Dr. Balagopal</b><br><font size="2"> <i> Noritake, Japan</i></font><br><br>
+                    <b>Dr. Tiezheng Tong</b><br><font size="2"> <i> Yale University, USA</i></font><br><br>
+                    <b>Prof. Suresh C Pillai</b><br><font size="2"> <i> Institute of Technology Sligo, Ireland</i></font><br><br>
+                    <b>Dr. Mangalraja</b><br><font size="2"> <i> University of Concepcion, Chile</i></font><br><br>
+                    <b>Dr. GM Anil Kumar</b><br><font size="2"> <i> TokioTech University, Japan</i></font><br><br>
+                    <b>Dr. Daniel Fingkelstein Shapiro</b><br><font size="2"> <i> Arizona State University, USA</i></font><br><br>
+                    <b>Dr. Kevin Schwartzenberg</b><br><font size="2"> <i> Trade water Industry, USA</i></font><br><br>
+                    <b>Dr. Almas Jalilov</b><br><font size="2"> <i> KFUPM, KSA</i></font><br><br>
+                    <b>Dr Jipeng Cheng</b><br><font size="2"> <i> Zhejiang University, China</i></font><br><br>
+                    <b>Dr. Jin Song Wu</b><br><font size="2"> <i> Northwestern University, USA</i></font><br><br>
+                    <b>Dr.Syed G. Dastager</b><br><font size="2"> <i> CSIR-NCL, India</i></font><br><br>
+                    <b>Dr. Shajesh</b><br><font size="2"> <i> Jain University, India</i></font><br><br>
+                    <b>Dr. Hareesh</b><br><font size="2"> <i> NIIST, India</i></font><br><br>
+                    <b>Dr. Ashutosh Kumar Mishra</b><br><font size="2"> <i> IIT Kanpur, India </i></font><br><br>
+                    <b>Dr. K P Surendran</b><br><font size="2"> <i> NIIST, India</i></font><br><br>
+                    <b>Dr. KGK Warrier</b><br><font size="2"> <i> Ceramic Consultant, India</i></font><br><br>
+                    <b>Dr. Dalia Vishnudasan</b><br><font size="2"> <i> Amrita Vishwavidyapeetham, India</i></font><br><br>
+                    <b>Dr. K G Gopchandran</b><br><font size="2"> <i> University of Kerala, India</i></font> 
+                    
+                </td>
+              </tr>
+            </tbody></table>
+           
+        </div>
+      </div>
+      </div>
+	  <!-- <div class="col-lg-3 align-self-baseline"> -->
+				<!-- <div class="text-center"> -->
+				<!-- <h4>Important dates</h4> -->
+				<!-- <hr class="divider ">  			 -->
+			<!-- </div> -->
+			<!-- <div class="table-responsive" style="padding-top:20px;"> -->
+				<!-- <table class="table  imp_date"> -->
+					<!-- <tr><td><b style="color: #26ad6d;">Abstract submission	</b><br><font size="3"><i> Up to 1<sup>st</sup>  october, 2019</i></font>  </td></tr> -->
+					<!-- <tr><td><b style="color: #26ad6d;">Paper acceptance intimation	</b><br><font size="3"><i> 10<sup>th</sup>  october, 2019</i></font>  </td></tr> -->
+					<!-- <tr><td><b style="color: #26ad6d;">Full papers submission	</b><br><font size="3"><i> Up to 30<sup>th</sup> october, 2019</i></font>  </td></tr> -->
+					<!-- <tr><td><b style="color: #26ad6d;">Early bird registration	</b><br><font size="3"><i> Up to 15<sup>th</sup> november, 2019</i></font>  </td></tr> -->
+					<!-- <tr><td><b style="color: #26ad6d;">Conference days	</b><br><font size="3"><i> 12<sup>th</sup> to 14<sup>th</sup>  december, 2019</i></font>  </td></tr> -->
+				<!-- </table> -->
+			<!-- </div> -->
+         <!-- </div> -->
+      </div>
         
     </div>
   </section>

@@ -21,9 +21,11 @@ Route::get('auth/google/callback', 'Auth\SocialiteController@handleGoogleCallbac
 Route::get('/', function () {
     return view('pages.index');
 });
-
-//Route::get('/home', 'HomeController@index');
+// Route::get('/dashboard', function () {
+//     return view("home");
+// });
+// Route::get('/home', 'HomeController@index');
 
 Route::get('/{page}',function($page){
-    return view("pages.$page");
+        return view("pages.$page");
 });
