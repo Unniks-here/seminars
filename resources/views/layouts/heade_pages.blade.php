@@ -3,6 +3,9 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-12"> 
+          @if(Request::is('index*') || Request::is('/'))
+         <img style="" class="img_logo" width="250px" src="{{asset('img/logo_icee2k19.png')}}">
+         @endif
           <br>
           <h1 class="text-white " style="text-shadow: 6px 3px 2px #4c4646;"><i>International Conference on Energy and Environment</i></h1>
           <hr class="divider my-4">

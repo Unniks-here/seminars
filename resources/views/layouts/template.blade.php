@@ -24,7 +24,7 @@
   <link href="css/flexslider.css" rel="stylesheet">
   <link href="css/creative.min.css" rel="stylesheet">
 
-  @if(Request::is('index*'))
+  @if(Request::is('index*') || Request::is('/'))
   <style>
     .btn-primary{
       background-color: #54846d !important;
