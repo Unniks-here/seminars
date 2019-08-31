@@ -31,7 +31,10 @@ Route::get('/{page}',function($page){
 });
 
 Route::get('/submissions/{page}',function($page){
+    if(\Auth::user()->participant_type != 'admin')
     return view("admin.$page");
+    else
+    return view("admin.approval");
 });
 
 Route::post('submissions/payment','PaymentController@payment')->name('admin.payment');
