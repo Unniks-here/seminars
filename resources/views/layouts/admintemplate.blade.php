@@ -92,11 +92,19 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link {{Request::is('submissions/payment*')? 'active' : ''}}" href="/submissions/payment">
+                  <i class="material-icons">payment</i>
+                  <span>Payment</span>
+                </a>
+              </li>
+              @if(Auth::user()->participant_type == 'Author of paper')
+              <li class="nav-item">
                 <a class="nav-link {{Request::is('submissions/submissions*')? 'active' : ''}}" href="/submissions/submissions">
                   <i class="material-icons">edit</i>
                   <span>Submissions</span>
                 </a>
               </li>
+              @endif
               {{-- <li class="nav-item">
                 <a class="nav-link " href="add-new-post.html">
                   <i class="material-icons">note_add</i>
@@ -203,8 +211,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
-<script src="{{asset('admin/scripts/extras.1.1.0.min.js')}}"></script>
-<script src="{{asset('admin/scripts/shards-dashboards.1.1.0.min.js')}}"></script>
-<script src="{{asset('admin/scripts/app/app-blog-overview.1.1.0.js')}}"></script>
+  <script src="{{asset('admin/scripts/extras.1.1.0.min.js')}}"></script>
+  <script src="{{asset('admin/scripts/shards-dashboards.1.1.0.min.js')}}"></script>
+  <script src="{{asset('admin/scripts/app/app-blog-overview.1.1.0.js')}}"></script>
+
+  @yield('script')
   </body>
 </html>

@@ -33,3 +33,6 @@ Route::get('/{page}',function($page){
 Route::get('/submissions/{page}',function($page){
     return view("admin.$page");
 });
+
+Route::post('submissions/payment','PaymentController@payment')->name('admin.payment');
+Route::post('submissions/submit/now','PaymentController@submission')->name('admin.submission');
