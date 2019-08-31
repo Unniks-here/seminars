@@ -21,7 +21,6 @@ class ColumnsToUsers extends Migration
             $table->string('pincode')->nullable();
             $table->string('country')->nullable();
             $table->string('mobile')->nullable();
-            $table->string('email')->nullable();
             $table->string('category')->nullable();
             $table->string('participant_type')->nullable();
             $table->string('accomadation')->nullable();

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.template')
 
 @section('content')
 <div class="container">
@@ -8,33 +8,6 @@
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
 
-                    <div class="row">
-                        <div class="col-md-12" style="height: 6px;"></div>
-
-                        <div class="col-md-12">
-                            <a href="{{ route('auth-facebook') }}" class="btn btn-default btn-block">Facebook</a>
-                        </div>
-
-                        <div class="col-md-12" style="height: 20px;"></div>
-
-                        <div class="col-md-12">
-                            <a href="{{ route('auth-google') }}" class="btn btn-default btn-block">Google</a>
-                        </div>
-
-                        <div class="col-md-12" style="height: 10px;"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <hr/>
-                        </div>
-                        <div class="col-sm-2 text-center text-uppercase">
-                            <div style="margin-top: 10px;">or</div>
-                        </div>
-                        <div class="col-sm-5">
-                            <hr/>
-                        </div>
-                    </div>
 
                     <form role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}

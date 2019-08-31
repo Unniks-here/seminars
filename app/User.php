@@ -20,6 +20,16 @@ class User extends Authenticatable
         'password',
         'facebook_id',
         'avatar',
+        'designation',
+        'address',
+        'institution',
+        'city',
+        'pincode',
+        'country',
+        'mobile',
+        'category',
+        'participant_type',
+        'accomadation'
     ];
 
     /**
