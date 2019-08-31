@@ -35,11 +35,42 @@ class PaymentController extends Controller
     }
     function submission(Request $request)
     {
-        $data=$request->all();
-        $data['user_id']=Auth::user()->id;
-
+        
         $submission=new Submission();
-        $created=$submission->where('id',$created->id)->update($request->all());
+        $created=$submission->where('user_id',Auth::user()->id)->first();
+
+        if(!$request->hasFile('file_doc'))
+        {
+            if(!empty($created->file_doc))
+            {
+                $request->file_doc=$created->file_doc;
+            }
+        }
+        else{
+            $this->validate($request, [
+                'file_doc' => 'required|max:10000|mimes:doc,docx,pdf',
+            ]);
+        }
+        
+
+        $data=$request->except(['_token']);
+
+        try{
+            if($request->hasFile('file_doc'))
+            {
+                $file = $request->file('file_doc'); 
+                $file_name=time().'_'.$file->getClientOriginalName();
+                $ext=$file->getClientOriginalExtension();
+                $destinationPath = 'uploads';
+                $file->move($destinationPath,$file_name);
+                $data['file_doc']=$file_name;
+            }
+        }
+        catch(\Exception $e)
+        {
+            \Log::error('file upload error >>> '. $e);
+        }
+        $submission->where('user_id',Auth::user()->id)->update($data);
 
         return redirect('submissions/home');
     }

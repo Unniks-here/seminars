@@ -85,6 +85,7 @@
           </div>
           <div class="nav-wrapper">
             <ul class="nav flex-column">
+                @if(Auth::user()->participant_type != 'admin')
               <li class="nav-item">
                 <a class="nav-link {{Request::is('submissions/home*')? 'active' : ''}}" href="/submissions/home">
                   <i class="material-icons">vertical_split</i>
@@ -97,11 +98,20 @@
                   <span>Payment</span>
                 </a>
               </li>
-              @if(Auth::user()->participant_type == 'Author of paper')
+              @endif
+              @if(Auth::user()->participant_type == 'Author of paper' && !empty(App\Submission::where('user_id',Auth::user()->id)->first()))
               <li class="nav-item">
                 <a class="nav-link {{Request::is('submissions/submissions*')? 'active' : ''}}" href="/submissions/submissions">
                   <i class="material-icons">edit</i>
                   <span>Submissions</span>
+                </a>
+              </li>
+              @endif
+              @if(Auth::user()->participant_type == 'admin')
+              <li class="nav-item">
+                <a class="nav-link {{Request::is('submissions/approval*')? 'active' : ''}}" href="/submissions/approval">
+                  <i class="material-icons">edit</i>
+                  <span>Approval</span>
                 </a>
               </li>
               @endif

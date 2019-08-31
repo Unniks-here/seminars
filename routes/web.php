@@ -36,3 +36,24 @@ Route::get('/submissions/{page}',function($page){
 
 Route::post('submissions/payment','PaymentController@payment')->name('admin.payment');
 Route::post('submissions/submit/now','PaymentController@submission')->name('admin.submission');
+
+Route::get('/submissions/approve/now/{id}',function($id){
+    $admin= \Auth::user()->participant_type;
+    if($admin=='admin')
+    {
+        $approval=\App\Submission::where('id',$id)->first()->approved;
+
+        if($approval==1)
+        {
+            $approval=0;
+        }
+        else
+        {
+            $approval=1;
+        }
+        \App\Submission::where('id',$id)->update(['approved'=>$approval]);
+
+        return redirect('submissions/approval');
+
+    }
+});

@@ -141,7 +141,7 @@
             $('.dd').show();
             $('.rtgs').hide();
             $('.spot').hide();
-        @if($submission)
+        @if(!empty($submission))
           $('.mode_of_payment').val("{{$submission->mode_of_payment}}");
 
           @if($submission->mode_of_payment=='dd')
