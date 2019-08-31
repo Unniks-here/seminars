@@ -47,23 +47,23 @@
                         <option  value="Spot">Spot Registration</option>
                       </select><br>
                       <label for="amount">Amount</label>
-                      <input class="form-control form-control-lg mb-3" value="{{$submission->amount?$submission->amount:''}}" type="number" name="amount" min="2500" max="11000" placeholder="Amount">
+                      <input class="form-control form-control-lg mb-3" value="{{!empty($submission->amount)?$submission->amount:''}}" type="number" name="amount" min="2500" max="11000" placeholder="Amount">
                       
                       <div class="dd">
                         <label for="dd">DD Number</label>
-                        <input class="form-control form-control-lg mb-3" value="{{$submission->dd_no?$submission->dd_no:''}}" type="text" name="dd_no"  placeholder="DD Number">
+                        <input class="form-control form-control-lg mb-3" value="{{!empty($submission->dd_no)?$submission->dd_no:''}}" type="text" name="dd_no"  placeholder="DD Number">
                         <label for="dd">DD Date</label>
-                        <input class="form-control form-control-lg mb-3" value="{{$submission->dd_date?$submission->dd_date:''}}" type="text" name="dd_date"  placeholder="DD Date">
+                        <input class="form-control form-control-lg mb-3" value="{{!empty($submission->dd_date)?$submission->dd_date:''}}" type="text" name="dd_date"  placeholder="DD Date">
                         <br>Bank Details</label>
-                        <textarea class="form-control form-control-lg mb-3" type="text" name="dd_bank"  placeholder="Bank Details">{{$submission->dd_bank?$submission->dd_bank:''}}</textarea>
+                        <textarea class="form-control form-control-lg mb-3" type="text" name="dd_bank"  placeholder="Bank Details">{{!empty($submission->dd_bank)?$submission->dd_bank:''}}</textarea>
                       </div>
                       <div class="rtgs">
                           <label for="dd">Transaction Number</label>
-                          <input class="form-control form-control-lg mb-3" value="{{$submission->transation_id?$submission->transation_id:''}}" type="text" name="transation_id"  placeholder="DD Number">
+                          <input class="form-control form-control-lg mb-3" value="{{!empty($submission->transation_id)?$submission->transation_id:''}}" type="text" name="transation_id"  placeholder="DD Number">
                           <label for="dd">Transaction Date</label>
-                          <input class="form-control form-control-lg mb-3" value="{{$submission->dd_date?$submission->dd_date:''}}" type="text" name="dd_date"  placeholder="DD Number">
+                          <input class="form-control form-control-lg mb-3" value="{{!empty($submission->dd_date)?$submission->dd_date:''}}" type="text" name="dd_date"  placeholder="DD Number">
                           <br>Bank Details</label>
-                          <textarea class="form-control form-control-lg mb-3" type="text" name="transaction_bank"  placeholder="Bank Details">{{$submission->transaction_bank?$submission->transaction_bank:''}}</textarea>
+                          <textarea class="form-control form-control-lg mb-3" type="text" name="transaction_bank"  placeholder="Bank Details">{{!empty($submission->transaction_bank)?$submission->transaction_bank:''}}</textarea>
                       </div>
                       <br>
                       <button class="btn btn-success" type="submit">Submit</button>
