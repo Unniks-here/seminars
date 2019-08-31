@@ -11,18 +11,18 @@
   <title>iCEE 2K19</title>
 
   <!-- Font Awesome Icons -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
   <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="{{asset('vendor/magnific-popup/magnific-popup.css')}}" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/flexslider.css" rel="stylesheet">
-  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="{{asset('css/flexslider.css')}}" rel="stylesheet">
+  <link href="{{asset('css/creative.min.css')}}" rel="stylesheet">
 
   @if(Request::is('index*') || Request::is('/'))
   <style>
@@ -186,7 +186,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
             <a class="{{Request::is('call_for_paper*')? 'active' : ''}} nav-link js-scroll-trigger" href="/call_for_paper">Call For Paper</a>
           </li>
           <li class="nav-item">
-            <a class="{{Request::is('registration*')? 'active' : ''}} nav-link js-scroll-trigger" href="/registration">Registration</a>
+            <a class="{{Request::is('regist*')? 'active' : ''}} nav-link js-scroll-trigger" href="/registration">Registration</a>
           </li>
           <li class="nav-item">
             <a class="{{Request::is('submission*')? 'active' : ''}} nav-link js-scroll-trigger" href="/submission">Submission</a>
@@ -206,8 +206,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
           <ul class="nav navbar-nav navbar-right">
               <!-- Authentication Links -->
               @if (Auth::guest())
-                  <li><a href="{{ route('login') }}">Login</a></li>
-                  <li><a href="{{ route('register') }}">Register</a></li>
+                  
               @else
                   <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -219,7 +218,8 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
                       </a>
 
                       <ul class="dropdown-menu" role="menu">
-                          <li>
+                          <li style="padding:10px">
+                              <a href="/submissions/home">Submissions</a>
                               <a href="{{ route('logout') }}"
                                   onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">
@@ -256,15 +256,15 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="{{asset('vendor/jquery-easing/jquery.easing.min.j')}}"></script>
+  <script src="{{asset('vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
+  <script src="{{asset('js/creative.min.js')}}"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js'></script>
 <script>
 		$('.flexslider').flexslider({

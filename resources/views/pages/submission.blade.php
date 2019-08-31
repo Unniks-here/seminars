@@ -11,7 +11,7 @@
 				<div class="col-sm-12 text-center"  >
 				  
 				
-				<a class="btn btn-warning readmore" href="/icee2k19" target="_blank"> Online Abstract Submission</a>
+                        @if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Login </a> <br><br> @endif
 				<hr>
 				<a class="btn btn-warning readmore" href="#" target="_blank"> Abstract Template<br> <font size="1">(Conference) </font></a>
 				<a class="btn btn-warning readmore" href="#" target="_blank"> Full  Paper Template<br> <font size="1">(Conference) </font></a>

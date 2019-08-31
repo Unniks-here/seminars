@@ -40,7 +40,7 @@
 
 
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('designation') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">Designation</label>
 
                             <div class="col-md-6">
@@ -55,13 +55,13 @@
                         </div>
 
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">Address</label>
+                        <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
+                            <label for="address" class="col-md-4 control-label">Address</label>
 
                             <div class="col-md-6">
                                 <textarea name="address" class="form-control" required ></textarea>
 
-                                @if ($errors->has('email'))
+                                @if ($errors->has('address'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
@@ -70,8 +70,8 @@
                         </div>
 
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">Institution</label>
+                        <div class="form-group{{ $errors->has('institution') ? ' has-error' : '' }}">
+                            <label for="institution" class="col-md-4 control-label">Institution</label>
 
                             <div class="col-md-6">
                                 <input id="institution" type="text" class="form-control" name="institution" required>
@@ -163,7 +163,7 @@
 
 
                         <div class="form-group{{ $errors->has('participant_type') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                            <label for="email" class="col-md-4 control-label">Participany Type</label>
 
                             <div class="col-md-6">
                                 <select name="participant_type" class="form-control">
@@ -180,11 +180,11 @@
 
 
                         <div class="form-group{{ $errors->has('accomadation') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+                            <label for="password" class="col-md-4 control-label">Need Accomadation?</label>
 
                             <div class="col-md-6">
-                                <label class="radio-inline"><input type="radio" name="accomadation" checked>Yes</label>&nbsp;
-                                <label class="radio-inline"><input type="radio" name="accomadation">No</label>
+                                <label class="radio-inline"><input type="radio" value="Yes" name="accomadation" checked>Yes</label>&nbsp;
+                                <label class="radio-inline"><input type="radio" value="No" name="accomadation">No</label>
 
                                 @if ($errors->has('accomadation'))
                                     <span class="help-block">

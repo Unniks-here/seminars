@@ -62,20 +62,20 @@
 	</div>
  <font size="2">Note: Registration Fee Includes Conference Kit, Lunch, Tea, Publication.<br><br>
  </font>
- 
-	   
 		</div>
- 
-
 </div>
- 
-	
 	 <br>	 
                 </div><!--/.col-sm-6-->
 
                 <div class="col-md-4  wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
 				<div class="testimonial" align="center"> 
-					<a class="btn btn-warning readmore" href="/icee2k19" target="_blank"> Online Registration </a> <br><br>
+						@if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Login </a> <br><br>
+						
+						@else
+
+						<a class="btn btn-warning readmore" href="/submissions/home"> Submissions </a> <br>
+
+						@endif
 					</div>
                     <div class="testimonial" align="left">  
 					

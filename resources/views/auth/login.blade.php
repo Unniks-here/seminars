@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">
+        <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
@@ -47,7 +47,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-
+                                <a class="btn btn-link" href="{{ route('register') }}">
+                                        Register now?
+                                </a>
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
