@@ -3,9 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+        <div class="col-md-4"></div>
+        <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">
+            <div class="panel panel-default" style="padding: 15px;
+            border: 1px solid #ced4da;">
+                <div class="panel-heading text-center"><b><font size="5">Login</font></b></div>
+                <hr>
                 <div class="panel-body">
 
 
@@ -47,11 +50,12 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
+                                <hr> 
                                 <a class="btn btn-link" href="{{ route('register') }}">
-                                        Register now?
+                                        Register now
                                 </a>
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
+                                    Forgot Your Password ?
                                 </a>
                         </div>
                     </form>

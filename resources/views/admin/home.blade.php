@@ -25,26 +25,26 @@
                           <div class="custom-control  mb-1">
                             <label class="custom-control-label" for="category1">Payment Details </label>
                             @if(empty($submission))
-                              <label class="bg-secondary rounded text-white text-center p-0">Not Entered</label>
+                              <label class="bg-secondary rounded text-white text-center p-0">&nbsp; Not Entered &nbsp; </label>
                             @else
-                              <label class="bg-success rounded text-white text-center p-0">Submitted</label>
+                              <label class="bg-success rounded text-white text-center p-0">&nbsp; Submitted &nbsp; </label>
                             @endif
                           </div>
                           <div class="custom-control  mb-1">
                             <label class="custom-control-label" for="category2">Participant Mode</label>
                             
-                              <label class="bg-success rounded text-white text-center p-0">{{Auth::user()->participant_type}}</label>
+                              <label class="bg-success rounded text-white text-center p-0">&nbsp;  {{Auth::user()->participant_type}} &nbsp; </label>
                           </div>
                           <div class="custom-control  mb-1">
-                            <label class="custom-control-label" for="category3">Paper Submitted Status</label>
+                            <label class="custom-control-label" for="category3">Registration Status</label>
                             @if(empty($submission))
-                              <label class="bg-secondary rounded text-white text-center p-0">Not Submitted</label>
+                              <label class="bg-secondary rounded text-white text-center p-0">&nbsp; Not Submitted &nbsp; </label>
                             @elseif($submission->approved==1)
-                              <label class="bg-success rounded text-white text-center p-0">Approved</label>
+                              <label class="bg-success rounded text-white text-center p-0">&nbsp; Approved &nbsp; </label>
                             @elseif($submission->approved==0)
-                              <label class="bg-warning rounded text-white text-center p-0">Pending</label>
+                              <label class="bg-warning rounded text-white text-center p-0">&nbsp; Pending &nbsp; </label>
                               @elseif($submission->approved==-1)
-                                <label class="bg-rejected rounded text-white text-center p-0">Rejected</label>
+                                <label class="bg-rejected rounded text-white text-center p-0">&nbsp; Rejected &nbsp; </label>
                             @endif
                           </div>
                       </ul>

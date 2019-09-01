@@ -19,6 +19,7 @@ class PaymentController extends Controller
             'mode_of_payment' => 'max:15',
             'dd_no' => 'max:50',
             'dd_date' => 'max:25',
+            'transaction_date' => 'max:25',
             'dd_bank' => 'max:50',
             'transation_id' => 'max:50',
             'transaction_bank' => 'max:50',

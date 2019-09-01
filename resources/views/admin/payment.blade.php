@@ -39,7 +39,8 @@
                               <br>IFSC Code: SBIN0070870, SWIFT Code: SBININBB, <br>Branch code: 70870
                             </td>
                         </tr>
-                      </table><br>
+                      </table> 
+                      <hr>
                       <label for="mode_of_payment">Payement Mode</label>
                       <select name="mode_of_payment" class="form-control mode_of_payment">
                         <option  value="dd">DD</option>
@@ -53,15 +54,29 @@
                         <label for="dd">DD Number</label>
                         <input class="form-control form-control-lg mb-3" value="{{!empty($submission->dd_no)?$submission->dd_no:''}}" type="text" name="dd_no"  placeholder="DD Number">
                         <label for="dd">DD Date</label>
+                        {{-- <div class="date1">
                         <input class="form-control form-control-lg mb-3" value="{{!empty($submission->dd_date)?$submission->dd_date:''}}" type="text" name="dd_date"  placeholder="DD Date">
+                        </div> --}}
+                        <div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control"  placeholder="DD Date" name="dd_date" value="{{!empty($submission->dd_date)?$submission->dd_date:''}}">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
+                        </div>
                         <br>Bank Details</label>
                         <textarea class="form-control form-control-lg mb-3" type="text" name="dd_bank"  placeholder="Bank Details">{{!empty($submission->dd_bank)?$submission->dd_bank:''}}</textarea>
                       </div>
                       <div class="rtgs">
                           <label for="dd">Transaction Number</label>
-                          <input class="form-control form-control-lg mb-3" value="{{!empty($submission->transation_id)?$submission->transation_id:''}}" type="text" name="transation_id"  placeholder="DD Number">
+                          <input class="form-control form-control-lg mb-3" value="{{!empty($submission->transation_id)?$submission->transation_id:''}}" type="text" name="transation_id"  placeholder="Transaction Number">
                           <label for="dd">Transaction Date</label>
-                          <input class="form-control form-control-lg mb-3" value="{{!empty($submission->dd_date)?$submission->dd_date:''}}" type="text" name="dd_date"  placeholder="DD Number">
+                          {{-- <input class="form-control form-control-lg mb-3" value="{{!empty($submission->dd_date)?$submission->dd_date:''}}" type="text" name="dd_date"  placeholder="Transaction Date"> --}}
+                          <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control"  placeholder="Transaction Date" name="transaction_date" value="{{!empty($submission->dd_date)?$submission->dd_date:''}}">
+                              <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-th"></span>
+                              </div>
+                          </div>
                           <br>Bank Details</label>
                           <textarea class="form-control form-control-lg mb-3" type="text" name="transaction_bank"  placeholder="Bank Details">{{!empty($submission->transaction_bank)?$submission->transaction_bank:''}}</textarea>
                       </div>
@@ -164,6 +179,14 @@
           }
           @endif
         @endif
+
+        $('.date1').datepicker({
+            format: 'mm/dd/yyyy',
+        });
+
+        $('.date').datepicker({
+            format: 'mm/dd/yyyy',
+        });
       });
 
       $('.mode_of_payment').on('change',function(){
@@ -187,5 +210,6 @@
         }
       })
 
+     
     </script>
 @endsection
