@@ -163,6 +163,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
   </style>
 
   @endif
+  @yield('css')
 </head>
 
 <body id="page-top">

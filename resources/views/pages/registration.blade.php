@@ -1,5 +1,11 @@
 @extends('layouts.template')
-
+@section('css')
+	<style>
+	.smtable td, .smtable th{
+			font-size: 10px;
+		}
+	</style>
+@endsection
 @section('content')
     <div class="container">
 		<div class="row">
@@ -98,10 +104,10 @@
 				</div>
 				<div class="col-md-12">
 				<hr>
-						<h3>Confirmation Letter</h3>
+						<h4>Confirmation Letter</h4>
 						<div align="justify">A registration confirmation letter will be sent to you via e-mail on receipt of the payment. </div><br><br>
 	   
-						<h3>Cancellation Policy</h3>
+						<h4>Cancellation Policy</h4>
   
 					   <div align="justify"> 
 						  Cancellation should be made in writing (stating your name and reference/registration number) and send to <a href="mailto:icee2k19@gmail.com">icee2k19@gmail.com</a> 

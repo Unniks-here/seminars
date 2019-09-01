@@ -1,5 +1,15 @@
 @extends('layouts.template')
-
+@section('css')
+	<style>
+		.clg_link{
+		color: #26ad6d;
+	}
+	.clg_link:hover{
+		color: #017d43;
+		text-decoration: none;
+	}
+	</style>
+@endsection
 @section('content')
     <div class="container">
       <div class="row">
