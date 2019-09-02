@@ -13,7 +13,7 @@
 				
                         @if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Login </a> <br><br> @endif
 				<hr>
-				<a class="btn btn-warning readmore" href="#" target="_blank"> Abstract Template<br> <font size="1">(Conference) </font></a>
+				<a class="btn btn-warning readmore" href="{{asset('docs/Abstract_template.docx')}}" download="Abstract_template.docx"> Abstract Template<br> <font size="1">(Conference) </font></a>
 				<a class="btn btn-warning readmore" href="#" target="_blank"> Full  Paper Template<br> <font size="1">(Conference) </font></a>
 							
 				</div>		 
@@ -77,9 +77,12 @@
                               
                                 <span>Poster Session</span>
                             </span></h3>
-                            <div align="justify"><font color="#333333"><br>The poster session is proposed to highlight the activities in various areas of biomaterials, therapeutics, bioengineering, and regenerative medicine. Best poster awards will be presented to students participating in the poster session. The poster display space of 3 ft (w) x 4 ft (h) will be available for the presenters. A committee comprising of eminent scientists will make its decision on the best posters.
+                            {{-- <div align="justify"><font color="#333333"><br>The poster session is proposed to highlight the activities in various areas of biomaterials, therapeutics, bioengineering, and regenerative medicine. Best poster awards will be presented to students participating in the poster session. The poster display space of 3 ft (w) x 4 ft (h) will be available for the presenters. A committee comprising of eminent scientists will make its decision on the best posters.
 
 
+</font></div> --}}
+                      
+    <div align="justify"><font color="#333333"><br>The poster session is proposed to highlight the activities in various areas of conference theme. Best poster awards will be presented to students participating in the poster session. The poster display space of 80 cm (w) x 100 cm (h) will be available for the presenters. A committee comprising of eminent scientists will make its decision on the best posters.
 </font></div>
                             
                         
