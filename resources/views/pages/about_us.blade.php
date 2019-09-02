@@ -16,11 +16,16 @@
         <div class="col-sm-9"> 
 			<p class="text-center">
 				<!-- <img style="" class="img_logo" width="250px" src="img/logo_icee2k19.png"> -->
+				<img style="width:100%;border-radius:5px;"  src="img/clg2.jpg">
 			</p>
           <br> 
           <p style="text-align: justify"><a href="http://www.tkmcas.ac.in/" class="clg_link" target="_blank"><font size="4"><b>T.K.M. College of Arts and Science</b></font></a>, established in 1965 by Janab Thangal Kunju Musaliar, is an acclaimed citadel of learning in the city of Kollam. The institute is affiliated to the University of Kerala and accredited by NAAC. T.K.M. College of Arts and Science now is one among 100 institutions in India with 80<sup>th</sup> rank in NIRF, under ministruy of HRD, Govt. of India.</p>
           <p style="text-align: justify">The institute offers ten Under Graduate and six Post Graduate programmes under the regular scheme. There are three approved research centers functioning in the institution. Many eminent scientists from India and abroad including Nobel laureate Prof. Ei-ichi Negishi have visited T.K.M. College of Arts & Science and delivered lectures in different occasions.</p>
-        </div>
+		  {{-- <p class="text-center">
+			<!-- <img style="" class="img_logo" width="250px" src="img/logo_icee2k19.png"> -->
+			<img style="width:100%;border-radius:5px;"  src="img/clg1.jpg">
+		</p> --}}
+		</div>
 		 <div class="col-lg-3 align-self-baseline">
 				<div class="text-center">
 				<h4>Important dates</h4>
