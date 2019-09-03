@@ -100,7 +100,7 @@
                 </a>
               </li>
               @endif
-              @if(Auth::user()->participant_type == 'Author of paper' && !empty(App\Submission::where('user_id',Auth::user()->id)->first()))
+              @if(Auth::user()->participant_type == 'Paper presentation' && !empty(App\Submission::where('user_id',Auth::user()->id)->first()))
               <li class="nav-item">
                 <a class="nav-link {{Request::is('submissions/submissions*')? 'active' : ''}}" href="/submissions/submissions">
                   <i class="material-icons">edit</i>
