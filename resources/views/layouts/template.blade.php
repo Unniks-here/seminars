@@ -121,7 +121,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
 filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)         drop-shadow(1px -1px 0 white)         drop-shadow(-1px -1px 0 white);
     }
 	header.masthead{
-		background-position: bottom;
+		background-position: center;
 	}
 	body{
 		background-color: #ffffff;
@@ -184,7 +184,13 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
             <a class="{{Request::is('about_us*')? 'active' : ''}} nav-link js-scroll-trigger" href="/about_us">About Us</a>
           </li>
           <li class="nav-item">
+            <a class="{{Request::is('committee*')? 'active' : ''}} nav-link js-scroll-trigger" href="/committee">Committee</a>
+          </li>
+          <li class="nav-item">
             <a class="{{Request::is('call_for_paper*')? 'active' : ''}} nav-link js-scroll-trigger" href="/call_for_paper">Call For Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="{{Request::is('speakers*')? 'active' : ''}} nav-link js-scroll-trigger" href="/speakers">Speakers</a>
           </li>
           <li class="nav-item">
             <a class="{{Request::is('regist*')? 'active' : ''}} nav-link js-scroll-trigger" href="/registration">Registration</a>
@@ -193,13 +199,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
             <a class="{{Request::is('submission*')? 'active' : ''}} nav-link js-scroll-trigger" href="/submission">Submission</a>
           </li>
           <li class="nav-item">
-            <a class="{{Request::is('committee*')? 'active' : ''}} nav-link js-scroll-trigger" href="/committee">Committee</a>
-          </li>
-          <li class="nav-item">
             <a class="{{Request::is('downloads*')? 'active' : ''}} nav-link js-scroll-trigger" href="/downloads">Downloads</a>
-          </li>
-          <li class="nav-item">
-            <a class="{{Request::is('speakers*')? 'active' : ''}} nav-link js-scroll-trigger" href="/speakers">Speakers</a>
           </li>
           <li class="nav-item">
             <a class="{{Request::is('contact_us*')? 'active' : ''}} nav-link js-scroll-trigger" href="/contact_us">Contact Us</a>

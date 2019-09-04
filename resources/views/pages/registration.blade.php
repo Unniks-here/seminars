@@ -74,7 +74,7 @@
 
                 <div class="col-md-4  wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
 				<div class="testimonial" align="center"> 
-						@if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Login </a> <br><br>
+						@if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Online Registration </a> <br><br>
 						
 						@else
 
@@ -92,8 +92,7 @@
 								<li>Access to all Sessions and Presentation
 								</li><li>Tea / Coffee / Lunch </li>
 								<li>Conference Kit</li> 
-								<li>Participation Certificate</li>
-								<li>Tea / Coffee / Lunches</li> 
+								<li>Participation Certificate</li> 
 							</ul>
 
 							<br>
@@ -104,16 +103,17 @@
 				</div>
 				<div class="col-md-12">
 				<hr>
-						<h4>Confirmation Letter</h4>
+						<h4>Intimation</h4>
 						<div align="justify">A registration confirmation letter will be sent to you via e-mail on receipt of the payment. </div><br><br>
 	   
 						<h4>Cancellation Policy</h4>
   
 					   <div align="justify"> 
 						  Cancellation should be made in writing (stating your name and reference/registration number) and send to <a href="mailto:icee2k19@gmail.com">icee2k19@gmail.com</a> 
-						  <br> <strong>In case of cancellation:</strong>      On or before 31<sup>st</sup> August 2019 - refund of 50% of your registration fee minus bank charges and administrative fee. 
-							<br> <strong>In case of cancellation:</strong>      On or before 31<sup>st</sup> October 2019 - refund of 25% of your registration fee less bank charges and administrative fee. 
-						  No refund will be made for cancellation received after 31<sup>st</sup> October 2019
+						  <br> <strong>In case of cancellation: to refund<br>
+						</strong>      On or before 1<sup>st</sup> October 2019 - refund of 50% of your registration fee minus bank charges and administrative fee. 
+							<br> On or before 5<sup>th</sup> October 2019 - refund of 25% of your registration fee less bank charges and administrative fee. 
+						  No refund will be made for cancellation received after 8<sup>th</sup> October 2019
 					  </div> 
 				</div>
 			</div>

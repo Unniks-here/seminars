@@ -11,7 +11,7 @@
 				<div class="col-sm-12 text-center"  >
 				  
 				
-                        @if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Login </a> <br><br> @endif
+                        @if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Online Abstact Submissioin </a> <br><br> @endif
 				<hr>
 				<a class="btn btn-warning readmore" href="{{asset('docs/Abstract_template.docx')}}" download="Abstract_template.docx"> Abstract Template<br> <font size="1">(Conference) </font></a>
 				<a class="btn btn-warning readmore" href="#" target="_blank"> Full  Paper Template<br> <font size="1">(Conference) </font></a>

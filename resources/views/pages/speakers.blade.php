@@ -10,7 +10,7 @@
         <div class="col-sm-8">  
           <div class="row">
               <div class="col-sm-12">
-                  <h4 style="color:#26ad6d; text-align: center">Address of Expected Speakers</h4>
+                  <h4 style="color:#26ad6d; text-align: center">Expected Speakers</h4>
               </div>
           </div>
             <div class="row ">

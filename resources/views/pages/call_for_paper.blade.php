@@ -9,7 +9,7 @@
 				<!-- <h1>Call For Papers</h1> -->
 				<!-- <hr class="my-4">  			 -->
 			<!-- </div> -->
-			<p style="text-align: justify;  ">Program Committee invites prospective authors to submit original and previously unpublished research and application papers in all spectrums of related fields. The conference topics cover but are not limited to the following areas :-</p>
+			<p style="text-align: justify;  ">Program Committee invites prospective authors to submit original and previously unpublished research and application papers in all spectrums of related fields. The conference topics cover the following areas :-</p>
 			<hr>
 			<div class="row">
         <div class="col-sm-6">
@@ -146,10 +146,11 @@
       </div>
 		</div>
 		<div class="col-lg-3 align-self-baseline">
-		<div style="text-align: justify; background-color: #cccccc; padding: 1rem; color: #66d214; border-radius:5px;">
-				<ul class="">
-					<li><a href="/submission">Abstract Submission</a></li> 
-				</ul>
+		<div class="text-center" style="text-align: justify;   padding: 1rem; color: #66d214; border-radius:5px;">
+				{{-- <ul class="">
+                    <li><a href="/submission">Abstract Submission</a></li> 
+                </ul> --}}
+                <a class="btn btn-warning readmore" href="/submission"> Abstract Submission </a>
 			</div>
 			<br>
 				<div class="text-center">
