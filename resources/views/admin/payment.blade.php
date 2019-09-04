@@ -48,7 +48,7 @@
                         <option  value="Spot">Spot Registration</option>
                       </select><br>
                       <label for="amount">Amount</label>
-                      <input class="form-control form-control-lg mb-3" value="{{!empty($submission->amount)?$submission->amount:''}}" type="number" name="amount" min="2500" max="11000" placeholder="Amount">
+                      <input class="form-control form-control-lg mb-3" value="{{!empty($submission->amount)?$submission->amount:''}}" type="number" name="amount" min="2000" max="11000" placeholder="Amount">
                       
                       <div class="dd">
                         <label for="dd">DD Number</label>

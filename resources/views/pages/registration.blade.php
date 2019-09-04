@@ -67,6 +67,17 @@
 	</div>
  <font size="2">Note: Registration Fee Includes Conference Kit, Lunch, Tea, Publication.<br><br>
  </font>
+ <br>
+ <table class="table" >
+	<tr>
+		<td>Bank Name: State Bank of India, 
+				<br>Branch: Karicode, Kollam
+				<br>Address: Mumthas Complex, Karicode, Kollam
+				<br>A/c No 67382785938 A/c Name: The Principal
+				<br>IFSC Code: SBIN0070870, SWIFT Code: SBININBB, <br>Branch code: 70870
+			</td>
+	</tr>
+</table> 
 		</div>
 </div>
 	 <br>	 
@@ -111,9 +122,9 @@
 					   <div align="justify"> 
 						  Cancellation should be made in writing (stating your name and reference/registration number) and send to <a href="mailto:icee2k19@gmail.com">icee2k19@gmail.com</a> 
 						  <br> <strong>In case of cancellation: to refund<br>
-						</strong>      On or before 1<sup>st</sup> October 2019 - refund of 50% of your registration fee minus bank charges and administrative fee. 
-							<br> On or before 5<sup>th</sup> October 2019 - refund of 25% of your registration fee less bank charges and administrative fee. 
-						  No refund will be made for cancellation received after 8<sup>th</sup> October 2019
+						</strong>      31<sup>st</sup> August 2019 to 1<sup>st</sup> October 2019 - refund of 50% of your registration fee minus bank charges and administrative fee. 
+							<br>31<sup>st</sup> October 2019 to 5<sup>th</sup> October 2019 - refund of 25% of your registration fee less bank charges and administrative fee. 
+						  <br>No refund will be made for cancellation received after 8<sup>th</sup> October 2019
 					  </div> 
 				</div>
 			</div>
