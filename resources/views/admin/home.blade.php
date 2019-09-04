@@ -42,9 +42,11 @@
                             @elseif($submission->approved==1)
                               <label class="bg-success rounded text-white text-center p-0">&nbsp; Approved &nbsp; </label>
                             @elseif($submission->approved==0)
-                              <label class="bg-warning rounded text-white text-center p-0">&nbsp; @if(Auth::user()->participant_type=='Participation only') The details are uploaded successfully. Further intimation will send you soon via e-mail @else Success @end &nbsp; </label>
-                              @elseif($submission->approved==-1)
+                              <label class="bg-warning rounded text-white text-center p-0">&nbsp; @if(Auth::user()->participant_type=='Participation only') The details are uploaded successfully. Further intimation will send you soon via e-mail @else Success @endif &nbsp; </label>
+                            @elseif($submission->approved==-1)
                                 <label class="bg-rejected rounded text-white text-center p-0">&nbsp; Rejected &nbsp; </label>
+                            @else 
+                              Please enter payment details
                             @endif
                           </div>
                       </ul>
