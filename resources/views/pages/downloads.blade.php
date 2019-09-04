@@ -6,7 +6,7 @@
             {{-- <ul class="">
                 <li><a href="/submission">Abstract Submission</a></li> 
             </ul> --}}
-        <a class="btn btn-warning readmore" href="{{asset('/docs/flyer_icee2k19.pdf')}}"> Flyer </a>
+            <a class="btn btn-warning readmore" href="{{asset('/docs/flyer_icee2k19.pdf')}}"> Flyer </a>
         </div>
     </div>
 @endsection
