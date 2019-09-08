@@ -20,12 +20,13 @@
                 <h6 class="m-0">Submission List</h6>
               </div>
               <div class='card-body table-responsive'>
+                <a href="/doc/download" class="btn btn-success"><i></i> Excel</a>
                   <?php $submissions = App\Submission::join('users','users.id','user_id')->select('users.name','submissions.*')->get(); ?>
                   <table class="table table-hover">
                       <thead>
                           <tr>
                             <th>#</th>
-                            <th>Action</th>
+                            <th>Reg No</th>
                             <th>Name</th>
                             <th>Submission Mode</th>
                             <th>Area</th>
@@ -47,7 +48,8 @@
                         @foreach($submissions as $submit)
                           <tr>
                           <td>{{$loop->iteration}}</td>
-                          <td><a class="mb-2 btn btn-sm {{$submit->approved==0? 'btn-warning' : 'btn-primary'  }} mr-1" href="/submissions/approve/now/{{$submit->id}}" style="color:white">{{$submit->approved==0? 'Approve' : 'Reject'  }}</a></td>
+                          {{-- <td><a class="mb-2 btn btn-sm {{$submit->approved==0? 'btn-warning' : 'btn-primary'  }} mr-1" href="/submissions/approve/now/{{$submit->id}}" style="color:white">{{$submit->approved==0? 'Approve' : 'Reject'  }}</a></td> --}}
+                          <td>{{$submit->reg_id}}</td>
                           <td>{{$submit->name}}</td>
                           <td>{{$submit->paper_submission_mode}}</td>
                           <td>{{$submit->area_of_paper}}</td>

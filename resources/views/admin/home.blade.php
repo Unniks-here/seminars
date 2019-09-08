@@ -17,7 +17,7 @@
                 <!-- Post Overview -->
                 <div class='card card-small mb-3'>
                     <div class="card-header border-bottom">
-                      <h6 class="m-0">Status</h6>
+                    <h6 class="m-0"><span class="pull-right">Registration No: {{!empty($submission)?$submission->reg_id:'NIL'}}</span></h6>
                     </div>
                     <div class='card-body p-0'>
                       <ul class="list-group list-group-flush">
