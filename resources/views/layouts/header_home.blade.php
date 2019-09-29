@@ -5,7 +5,7 @@
         <div class="col-lg-12">
           <img style="" class="img_logo" width="250px" src="img/logo_icee2k19.png">
           <br>
-          <h1 class="text-white " style="text-shadow: 6px 3px 2px #4c4646;"><i>International Conference <br>on <br>Energy and Environment</i></h1>
+          <h1 class="text-white " style="text-shadow: 6px 3px 2px #4c4646;"><i>International Conference on Energy and Environment</i></h1>
           <hr class="divider my-4">
 		  <div class="align-self-baseline">
             <h4 class="text-white font-weight-bold" style="font-size:medium">12-14 December, 2019 <br> T.K.M. College of Arts and Science, Kerala, India</h4>
