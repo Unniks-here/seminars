@@ -76,6 +76,11 @@
 				<br>A/c No 67382785938 A/c Name: The Principal
 				<br>IFSC Code: SBIN0070870, SWIFT Code: SBININBB, <br>Branch code: 70870
 			</td>
+			<td>
+					<b>For Queries and Further Information</b><br>
+					<td>Harilal N Thazhikkattuseril</td>
+              		<td>+91 8281151654</td>
+			</td>
 	</tr>
 </table> 
 		</div>
