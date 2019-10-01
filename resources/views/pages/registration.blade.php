@@ -78,8 +78,8 @@
 			</td>
 			<td>
 					<b>For Queries and Further Information</b><br>
-					<td>Harilal N Thazhikkattuseril</td>
-              		<td>+91 8281151654</td>
+					Harilal N Thazhikkattuseril<br>
+              		+91 8281151654
 			</td>
 	</tr>
 </table> 
