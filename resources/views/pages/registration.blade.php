@@ -75,14 +75,14 @@
 				<br>Address: Mumthas Complex, Karicode, Kollam
 				<br>A/c No 67382785938 A/c Name: The Principal
 				<br>IFSC Code: SBIN0070870, SWIFT Code: SBININBB, <br>Branch code: 70870
-			</td>
-			<td>
-					<b>For Queries and Further Information</b><br>
-					Harilal N Thazhikkattuseril<br>
-              		+91 8281151654
-			</td>
+			</td> 
 	</tr>
 </table> 
+<div>
+		<b>For Queries and Further Information</b><br>
+		Harilal N Thazhikkattuseril<br>
+		  +91 8281151654
+</div>
 		</div>
 </div>
 	 <br>	 
