@@ -46,9 +46,9 @@
                       <hr>
                       <label for="mode_of_payment">Payement Mode</label>
                       <select name="mode_of_payment" class="form-control mode_of_payment">
-                        {{-- <option  value="dd">DD</option> --}}
-                        <option  value="Spot">Spot Registration</option>
+                        <option  value="dd">DD</option>
                         <option  value="NEFT/RTGS">NEFT/RTGS</option>
+                        {{-- <option  value="Spot">Spot Registration</option> --}}
                       </select><br>
                       <label for="amount">Amount</label>
                       <input class="form-control form-control-lg mb-3" value="{{!empty($submission->amount)?$submission->amount:''}}" type="number" name="amount" min="2000" max="11000" placeholder="Amount">
@@ -156,9 +156,9 @@
 
       $(document).ready(function(){
 
-            $('.dd').hide();
+            $('.dd').show();
             $('.rtgs').hide();
-            $('.spot').show();
+            $('.spot').hide();
         @if(!empty($submission))
           $('.mode_of_payment').val("{{$submission->mode_of_payment}}");
 
