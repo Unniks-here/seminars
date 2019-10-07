@@ -49,11 +49,11 @@
                     <h4 style="color:#26ad6d">Conveners</h4>
       
                    <p> 
-				   <b>Dr. P.K. Manoj  </b><br><font size="2"> <i> Conference Papers  Management</i></font><br><br>
-                    <b>Dr. Sumalekshmy S  </b><br><font size="2"> <i> Govt. Funding</i></font><br><br>
-                    <b>Prof. Adersh V.K  </b><br><font size="2"> <i> Sponsorship</i></font><br><br>
-                    <b>Prof. Aparna L.R 	</b><br><font size="2"> <i> Finance</i></font><br><br>
-                    <b>Dr. Mohamed Musthafa. K </b><br><font size="2"> <i> Printing and Publishing</i></font><br> </p>
+				   <b>Dr. P.K. Manoj  </b><br><br>
+                    <b>Dr. Sumalekshmy S  </b><br><br>
+                    <b>Prof. Adersh V.K  </b><br><br>
+                    <b>Prof. Aparna L.R 	</b><br><br>
+                    <b>Dr. Mohamed Musthafa. K </b><br> </p>
                 </td>
                 <td class="td">
       
