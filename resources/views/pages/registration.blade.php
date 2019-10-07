@@ -70,12 +70,13 @@
  <br>
  <table class="table" >
 	<tr>
-		<td>Bank Name: State Bank of India, 
-				<br>Branch: Karicode, Kollam
-				<br>Address: Mumthas Complex, Karicode, Kollam
-				<br>A/c No 67382785938 A/c Name: The Principal
-				<br>IFSC Code: SBIN0070870, SWIFT Code: SBININBB, <br>Branch code: 70870
-			</td> 
+		<td>A/c Holder Name: The Principal
+			<br>A/c No 67382785938 
+			<br>Bank Name: State Bank of India, 
+			<br>Branch: Karicode, Kollam
+			<br>IFSC Code: SBIN0070870, <br>SWIFT Code: SBININBB, <br>Branch code: 70870
+			<br>Address: Mumthas Complex, Karicode, Kollam
+		</td> 
 	</tr>
 </table> 
 <div>
