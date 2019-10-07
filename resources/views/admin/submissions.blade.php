@@ -31,7 +31,7 @@
                   @endif
                   <form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data" action="{{ route('admin.submission') }}">
                       {{ csrf_field() }}
-                      <label for="paper_submission_mode">Payement Mode</label>
+                      <label for="paper_submission_mode">Submission</label>
                       <select name="paper_submission_mode" class="form-control paper_submission_mode">
                         <option  value="Abstract">Abstract </option>
                         <option  value="Full paper">Full paper</option>
@@ -58,7 +58,7 @@
                         <option  value="Poster">Poster</option>
                       </select><br>
                       <br>
-                      <label>Paper (PDF/docx/doc)</label>
+                      <label>Paper (docx/doc)</label>
                       <br>
                       <input type="file"  name="file_doc" class="form-control">
                         @if(!empty($submission->file_doc)) <a href="/uploads/{{$submission->file_doc}}">{{$submission->file_doc}}</a> @endif
