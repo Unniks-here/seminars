@@ -163,6 +163,15 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
   </style>
 
   @endif
+  <style>
+    @media only screen and (max-width: 600px) {
+  .sponsers{
+    position: absolute;
+    width: 95%;
+    bottom: -80px;
+  }
+  }
+  </style>
   @yield('css')
 </head>
 

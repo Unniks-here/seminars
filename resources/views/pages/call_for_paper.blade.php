@@ -56,7 +56,6 @@
 						  <li>Modelling and Simulation</li> 
 						<li>Biomass Conversions</li>
 						<li>Computational Studies </li>
-						<li>Modelling and Simulation</li>
 						<li>Electricity from Waste</li>
 						<li>High Voltage Engineering</li>
 						<li>Non-renewable Energy</li>
@@ -96,7 +95,8 @@
                     <li>Photocatalysis</li>
                     <li>Electrocatalysis </li>
                     <li>Nanophotonics</li>
-                    <li>Nanoelectronics Nanofluids</li>
+                    <li>Nanoelectronics </li>
+                    <li>Nanofluids</li>
                     <li>Nano-porous Materials</li>
                     <li>Nanomaterial Toxicity</li>
                     <li>Nanodevices </li>

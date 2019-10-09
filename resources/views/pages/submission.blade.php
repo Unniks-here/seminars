@@ -14,7 +14,7 @@
                         @if (Auth::guest()) <a class="btn btn-warning readmore" href="/login"> Online Abstact Submissioin </a> <br><br> @endif
 				<hr>
 				<a class="btn btn-warning readmore" href="{{asset('docs/Abstract_template.docx')}}" download="Abstract_template.docx"> Abstract Template<br> <font size="1">(Conference) </font></a>
-				<a class="btn btn-warning readmore" href="#" target="_blank"> Full  Paper Template<br> <font size="1">(Conference) </font></a>
+				<a class="btn btn-warning readmore" href="{{asset('docs/full_paper_template.docx')}}" download="full_paper_template.docx"> Full  Paper Template<br> <font size="1">(Conference) </font></a>
 							
 				</div>		 
 						
@@ -58,37 +58,65 @@
 				
 						
                    </div> 
+                   <div class="col-sm-12 "  >
+                        <br>
+                        <br>
+                       <h3 class="text-center" style="    background: #d8d8d8;
+                           padding: 10px;
+                           color: #2bad6d;
+                           border-radius: 8px;
+                           font-size: 20px;
+                           border-bottom-left-radius: 0;
+                           border-bottom-right-radius: 0;">
+                                                   <span class="heading-three">
+                                                     
+                                                       <span>Poster Session</span>
+                                                   </span></h3>
+                                                   {{-- <div align="justify"><font color="#333333"><br>The poster session is proposed to highlight the activities in various areas of biomaterials, therapeutics, bioengineering, and regenerative medicine. Best poster awards will be presented to students participating in the poster session. The poster display space of 3 ft (w) x 4 ft (h) will be available for the presenters. A committee comprising of eminent scientists will make its decision on the best posters.
+                       
+                       
+                       </font></div> --}}
+                                             
+                           <div align="justify"><font color="#333333"><br>The poster session is proposed to highlight the activities in various areas of conference theme. Best poster awards will be presented to students participating in the poster session. The poster display space of 80 cm (w) x 100 cm (h) will be available for the presenters. A committee comprising of eminent scientists will make its decision on the best posters.
+                       </font></div>
+                                                   
+                                               
+                       
+                       
+                       </div>
+
+                   <div class="col-sm-12 "  >
+                        <br>
+                        <br>
+                       <h3 class="text-center" style="    background: #d8d8d8;
+                           padding: 10px;
+                           color: #2bad6d;
+                           border-radius: 8px;
+                           font-size: 20px;
+                           border-bottom-left-radius: 0;
+                           border-bottom-right-radius: 0;">
+                                                   <span class="heading-three">
+                                                     
+                                                       <span>Full Paper</span>
+                                                   </span></h3>
+                        <div align="justify"><font color="#333333"><br>The article's submitted as full paper will e reviewed and the selected peoples will be 
+                            published by national and international publishers(Indexed and database including Web of Science and Scopus).
+                        </font><br>
+                        <br><b>1. Author guidelines of AIP. Please visit</b> <a href="https://aip.scitation.org/apc/authors/preppapers">link</a> 
+                        <br>
+                        <a class="btn btn-warning readmore btn-sm" href="{{asset('docs/AIP_Template.dotx')}}" download="AIP_Template.dotx"> AIP Template </a>
+                        <br>
+                        <br><b>2. Author Guidelines of IJMR</b>
+                        <br>
+                        <a class="btn btn-warning readmore btn-sm" href="{{asset('docs/IJMR_author_style_guide_&_conditions.pdf')}}" download="IJMR_author_style_guide_&_conditions.pdf"> Style Guide for Authors </a>
+        
+                    
+                    </div>
+                   </div>
 
 
 
-
-
- <div class="col-sm-12 "  >
- <br>
- <br>
-<h3 class="text-center" style="    background: #d8d8d8;
-    padding: 10px;
-    color: #2bad6d;
-    border-radius: 8px;
-    font-size: 20px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;">
-                            <span class="heading-three">
-                              
-                                <span>Poster Session</span>
-                            </span></h3>
-                            {{-- <div align="justify"><font color="#333333"><br>The poster session is proposed to highlight the activities in various areas of biomaterials, therapeutics, bioengineering, and regenerative medicine. Best poster awards will be presented to students participating in the poster session. The poster display space of 3 ft (w) x 4 ft (h) will be available for the presenters. A committee comprising of eminent scientists will make its decision on the best posters.
-
-
-</font></div> --}}
-                      
-    <div align="justify"><font color="#333333"><br>The poster session is proposed to highlight the activities in various areas of conference theme. Best poster awards will be presented to students participating in the poster session. The poster display space of 80 cm (w) x 100 cm (h) will be available for the presenters. A committee comprising of eminent scientists will make its decision on the best posters.
-</font></div>
-                            
-                        
-
-
-</div>
+ 
  
 					
 					

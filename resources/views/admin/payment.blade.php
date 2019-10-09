@@ -32,11 +32,14 @@
                           @endif
                       <table class="table" >
                         <tr>
-                          <td>Bank Name: State Bank of India, 
+                          <td>A/c Holder Name: The Principal
+                            <br>A/c No 67382785938 
+                              <br>Bank Name: State Bank of India, 
                               <br>Branch: Karicode, Kollam
+                              <br>IFSC Code: SBIN0070870, 
+                              <br>Branch code: 70870
+                              <br>SWIFT Code: SBININBB, 
                               <br>Address: Mumthas Complex, Karicode, Kollam
-                              <br>A/c No 67382785938 A/c Name: The Principal
-                              <br>IFSC Code: SBIN0070870, SWIFT Code: SBININBB, <br>Branch code: 70870
                             </td>
                         </tr>
                       </table> 
@@ -45,7 +48,7 @@
                       <select name="mode_of_payment" class="form-control mode_of_payment">
                         <option  value="dd">DD</option>
                         <option  value="NEFT/RTGS">NEFT/RTGS</option>
-                        <option  value="Spot">Spot Registration</option>
+                        {{-- <option  value="Spot">Spot Registration</option> --}}
                       </select><br>
                       <label for="amount">Amount</label>
                       <input class="form-control form-control-lg mb-3" value="{{!empty($submission->amount)?$submission->amount:''}}" type="number" name="amount" min="2000" max="11000" placeholder="Amount">
