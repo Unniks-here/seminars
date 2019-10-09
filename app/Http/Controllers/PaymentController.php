@@ -110,7 +110,7 @@ class PaymentController extends Controller
 
     function excel()
     {
-        $submissions=Submission::join('users','users.id','user_id')->select('users.name','submissions.*')->get();
+        $submissions=Submission::join('users','users.id','user_id')->select('users.name','users.address','users.email','users.mobile','users.institution','submissions.*')->get();
         Excel::create('submission_list_'.time(), function($excel)use($submissions) {
             $excel->sheet('report', function($sheet)use($submissions) {
 
@@ -120,5 +120,10 @@ class PaymentController extends Controller
 
         })->export('xls');
         // Excel::download(view('admin.excel',compact('submissions')),'data.xlsx');
+    }
+    public function deleteSubmission($submission)
+    {
+        Submission::where('id',$submission)->delete();
+        return redirect()->back()->with('message','Submission deleted successfully');
     }
 }

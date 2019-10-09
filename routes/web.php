@@ -61,3 +61,5 @@ Route::get('/submissions/approve/now/{id}',function($id){
 
     }
 });
+
+Route::delete('submissions/delete/{sub_id}','PaymentController@deleteSubmission')->name('submission.destroy');

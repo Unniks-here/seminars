@@ -13,6 +13,9 @@
                   <th>#</th>
                   <th>Reg No</th>
                   <th>Name</th>
+                  <th>Address</th>
+                  <th>Email</th>
+                  <th>phone</th>
                   <th>Submission Mode</th>
                   <th>Area</th>
                   <th>Title</th>
@@ -36,6 +39,9 @@
                 {{-- <td><a class="mb-2 btn btn-sm {{$submit->approved==0? 'btn-warning' : 'btn-primary'  }} mr-1" href="/submissions/approve/now/{{$submit->id}}" style="color:white">{{$submit->approved==0? 'Approve' : 'Reject'  }}</a></td> --}}
                 <td>{{$submit->reg_id}}</td>
                 <td>{{$submit->name}}</td>
+                <td>{{$submit->address}}</td>
+                <td>{{$submit->email}}</td>
+                <td>{{$submit->mobile}}</td>
                 <td>{{$submit->paper_submission_mode}}</td>
                 <td>{{$submit->area_of_paper}}</td>
                 <td>{{$submit->title}}</td>
