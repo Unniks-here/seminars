@@ -16,7 +16,7 @@ class PaymentController extends Controller
     {
         $this->validate($request, [
             'dd_no' => 'max:50',
-            'title' => 'max:50',
+            'title' => 'max:150',
             'authors_with_address' => 'max:191',
             'mode_of_presentation' => 'max:40',
             'mode_of_payment' => 'max:15',
@@ -75,7 +75,20 @@ class PaymentController extends Controller
     }
     function submission(Request $request)
     {
-        
+        $this->validate($request, [
+            'dd_no' => 'max:50',
+            'title' => 'max:150',
+            'authors_with_address' => 'max:191',
+            'mode_of_presentation' => 'max:40',
+            'mode_of_payment' => 'max:15',
+            'dd_no' => 'max:50',
+            'dd_date' => 'max:25',
+            'transaction_date' => 'max:25',
+            'dd_bank' => 'max:50',
+            'transation_id' => 'max:50',
+            'transaction_bank' => 'max:50',
+        ]);
+
         $submission=new Submission();
         $created=$submission->where('user_id',Auth::user()->id)->first();
 

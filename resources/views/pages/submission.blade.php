@@ -7,7 +7,11 @@
       <!-- <h1 style="text-align: center">Submission</h1> -->
       <!-- <hr class="divider  my-4">  -->
       <div class="row">
-				
+				<div class="alert alert-success">
+                        <p style="text-align:center">
+                    For registration, abstract submission and full paper submission, please visit the registration page <a href="/login">(Online Registration)</a>
+                        <br>
+                        Submission details are given below</p></div>
 				<div class="col-sm-12 text-center"  >
 				  
 				
@@ -123,9 +127,6 @@
                 </div>
                 </div>
 				<div class="col-lg-3 align-self-baseline">
-                        <p>
-                                For  abstract submission and registration, please visit the registration page (Online Registration)
-                         </p>
 				<div class="text-center">
 				<h4>Important dates</h4>
 				<hr class="divider ">  			

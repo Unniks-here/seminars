@@ -6,7 +6,7 @@
     <div class="page-header row no-gutters py-4">
       <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
         <span class="text-uppercase page-subtitle">Dashboard</span>
-        <h3 class="page-title">Submissions</h3>
+        <h3 class="page-title">Abstract Submission</h3>
       </div>
     </div>
     <!-- End Page Header -->
@@ -31,11 +31,11 @@
                   @endif
                   <form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data" action="{{ route('admin.submission') }}">
                       {{ csrf_field() }}
-                      <label for="paper_submission_mode">Submission</label>
+                      {{-- <label for="paper_submission_mode">Submission</label>
                       <select name="paper_submission_mode" class="form-control paper_submission_mode">
                         <option  value="Abstract">Abstract </option>
                         <option  value="Full paper">Full paper</option>
-                      </select><br>
+                      </select><br> --}}
                       <label for="area_of_paper">Area of paper</label>
                       <select name="area_of_paper" class="form-control area_of_paper">
                           <option  value="RENEWABLE ENERGY">RENEWABLE ENERGY </option>
@@ -47,7 +47,7 @@
                      </select><br>
                       <br>
                       <label for="title">Title of paper</label>
-                    <input class="form-control form-control-lg mb-3" value="{{!empty($submission->title)? $submission->title : ''}}" type="text" name="title" maxlength="10" placeholder="Title">
+                    <input class="form-control form-control-lg mb-3" value="{{!empty($submission->title)? $submission->title : ''}}" type="text" name="title" maxlength="150" placeholder="Title">
                       <br>
                       <label for="authors_with_address">Authors with phone number and email</label>
                       <textarea class="form-control form-control-lg mb-3" type="text" name="authors_with_address"  placeholder="Authors with details">{{!empty($submission->authors_with_address)? $submission->authors_with_address : ''}}</textarea>
