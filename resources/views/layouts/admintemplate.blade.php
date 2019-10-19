@@ -67,6 +67,8 @@
     {{-- <div class="color-switcher-toggle animated pulse infinite">
       <i class="material-icons">settings</i>
     </div> --}}
+    
+    <?php $submission = App\Submission::where('user_id',Auth::user()->id)->first();  ?>
     <div class="container-fluid">
       <div class="row">
         <!-- Main Sidebar -->
@@ -87,12 +89,14 @@
           <div class="nav-wrapper">
             <ul class="nav flex-column">
                 @if(Auth::user()->participant_type != 'admin')
+                @if(!empty($submission))
               <li class="nav-item">
                 <a class="nav-link {{Request::is('submissions/home*')? 'active' : ''}}" href="/submissions/home">
                   <i class="material-icons">vertical_split</i>
                   <span>iCEE2k19</span>
                 </a>
               </li>
+              @endif
               <li class="nav-item">
                 <a class="nav-link {{Request::is('submissions/payment*')? 'active' : ''}}" href="/submissions/payment">
                   <i class="material-icons">payment</i>

@@ -64,7 +64,14 @@ class PaymentController extends Controller
         $id='ICEE'.$id;
         $submission->where('id',$s_id)->update(['user_id'=>Auth::user()->id,'reg_id'=>$id]);
 
-        return redirect('submissions/home');
+        if(Auth::user()->participant_type=='Participation only')
+        {
+            return redirect('submissions/home');
+        }
+        else
+        {
+            return redirect('submissions/submissions');
+        }
     }
     function submission(Request $request)
     {
@@ -81,7 +88,7 @@ class PaymentController extends Controller
         }
         else{
             $this->validate($request, [
-                'file_doc' => 'required|max:10000|mimes:doc,docx,pdf',
+                'file_doc' => 'required|max:10000|mimes:doc,docx',
             ]);
         }
         
@@ -125,5 +132,45 @@ class PaymentController extends Controller
     {
         Submission::where('id',$submission)->delete();
         return redirect()->back()->with('message','Submission deleted successfully');
+    }
+
+    public function full_paper(Request $request)
+    {
+        $submission=new Submission();
+        $created=$submission->where('user_id',Auth::user()->id)->first();
+
+        if(!$request->hasFile('full_paper'))
+        {
+            if(!empty($created->full_paper))
+            {
+                $request->file_doc=$created->full_paper;
+            }
+        }
+        else{
+            $this->validate($request, [
+                'full_paper' => 'required|max:60000|mimes:doc,docx',
+            ]);
+        }
+
+        $data=$request->except(['_token']);
+
+        try{
+            if($request->hasFile('full_paper'))
+            {
+                $file = $request->file('full_paper'); 
+                $file_name=time().'_'.$file->getClientOriginalName();
+                $ext=$file->getClientOriginalExtension();
+                $destinationPath = 'uploads';
+                $file->move($destinationPath,$file_name);
+                $data['full_paper']=$file_name;
+            }
+        }
+        catch(\Exception $e)
+        {
+            \Log::error('file upload error >>> '. $e);
+        }
+        $submission->where('user_id',Auth::user()->id)->update($data);
+
+        return redirect('submissions/home');
     }
 }

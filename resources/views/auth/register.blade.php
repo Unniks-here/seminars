@@ -155,6 +155,7 @@
                                     <option value="Research Scholar">Research Scholar</option>
                                     <option value="Faculty/Scientist">Faculty/ Scientist</option>
                                     <option value="Industry">Industry</option>
+                                    <option value="group">Group Registration</option>
                                   </select>
 
                                 @if ($errors->has('category'))

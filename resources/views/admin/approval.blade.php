@@ -50,7 +50,8 @@
                             <th>Transaction Date</th>
                             <th>Transaction Bank</th>
                             <th>Amount</th>
-                            <th>File</th>
+                            <th>Abstract</th>
+                            <th>Full Paper</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -84,7 +85,8 @@
                           <td>{{$submit->dd_date}}</td>
                           <td>{{$submit->transaction_bank}}</td>
                           <td>{{$submit->amount}}</td>
-                          <td><a href="/uploads/{{$submit->file_doc}}">{{$submit->file_doc}}</a></td>
+                          <td><a target="_blank" href="/uploads/{{$submit->file_doc}}">{{$submit->file_doc}}</a></td>
+                          <td><a target="_blank" href="/uploads/{{$submit->full_paper}}">{{$submit->full_paper}}</a></td>
                           </tr>
                         @endforeach
                       </tbody>

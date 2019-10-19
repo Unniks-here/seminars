@@ -47,7 +47,7 @@
                      </select><br>
                       <br>
                       <label for="title">Title of paper</label>
-                    <input class="form-control form-control-lg mb-3" value="{{!empty($submission->title)? $submission->title : ''}}" type="text" name="title"  placeholder="Title">
+                    <input class="form-control form-control-lg mb-3" value="{{!empty($submission->title)? $submission->title : ''}}" type="text" name="title" maxlength="10" placeholder="Title">
                       <br>
                       <label for="authors_with_address">Authors with phone number and email</label>
                       <textarea class="form-control form-control-lg mb-3" type="text" name="authors_with_address"  placeholder="Authors with details">{{!empty($submission->authors_with_address)? $submission->authors_with_address : ''}}</textarea>
@@ -58,7 +58,7 @@
                         <option  value="Poster">Poster</option>
                       </select><br>
                       <br>
-                      <label>Paper (docx/doc)</label>
+                      <label>Abstract (docx/doc)</label>
                       <br>
                       <input type="file"  name="file_doc" class="form-control">
                         @if(!empty($submission->file_doc)) <a href="/uploads/{{$submission->file_doc}}">{{$submission->file_doc}}</a> @endif

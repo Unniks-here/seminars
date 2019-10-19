@@ -39,6 +39,7 @@ Route::get('/submissions/{page}',function($page){
 
 Route::post('submissions/payment','PaymentController@payment')->name('admin.payment');
 Route::post('submissions/submit/now','PaymentController@submission')->name('admin.submission');
+Route::post('submissions/submit/now/full_paper','PaymentController@full_paper')->name('admin.submission.fullpaper');
 Route::get('doc/download','PaymentController@excel');
 
 Route::get('/submissions/approve/now/{id}',function($id){
