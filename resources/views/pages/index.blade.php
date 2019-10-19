@@ -32,6 +32,9 @@
           </p>
         </div>
 		<div class="col-lg-3 align-self-baseline">
+				<p>
+						For  abstract submission and registration, please visit the registration page (Online Registration)
+				 </p>
 				<div class="text-center">
 				<h4>Important dates</h4>
 				<hr class="divider ">  			

@@ -24,7 +24,10 @@
             </div>
             @endif
             @if($submission->approved==0)
-            <label class="bg-warning rounded text-white text-center p-0">&nbsp; @if(Auth::user()->participant_type=='Participation only') The details are uploaded successfully. Further intimation will send you soon via e-mail @else The details are uploaded successfully. Further intimation will send you soon via e-mail @endif &nbsp; </label>
+            <label class="bg-info rounded text-white text-center p-0">&nbsp; @if(Auth::user()->participant_type=='Participation only') The details are uploaded successfully. Further intimation will send you soon via e-mail @else The details are uploaded successfully. Further intimation will send you soon via e-mail @endif &nbsp; </label>
+            @endif
+            @if($submission->full_paper)
+            <label class="bg-info rounded text-white text-center p-0">&nbsp;Thankyou. Your full paper submitted successfully. Please send your full paper to our email address too, icee2k19@gmail.com. <br>We will contact you soon &nbsp; </label>
             @endif
             <br>
             @if(Auth::user()->participant_type!='Participation only')

@@ -146,6 +146,10 @@
       </div>
 		</div>
 		<div class="col-lg-3 align-self-baseline">
+            
+				<p>
+						For  abstract submission and registration, please visit the registration page (Online Registration)
+				 </p>
 		<div class="text-center" style="text-align: justify;   padding: 1rem; color: #66d214; border-radius:5px;">
 				{{-- <ul class="">
                     <li><a href="/submission">Abstract Submission</a></li> 
