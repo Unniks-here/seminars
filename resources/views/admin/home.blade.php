@@ -12,6 +12,9 @@
     <!-- End Page Header -->
     <!-- Small Stats Blocks -->
     <?php $submission = App\Submission::where('user_id',Auth::user()->id)->first();  ?>
+    @if(empty($submission)) 
+    @php return redirect()->route('admin.payment') @endphp
+    @endif
     <div class="row">
         <div class="col-sm-4">
             @if ($errors->any())
@@ -56,11 +59,7 @@
                         <li class="list-group-item px-3 pb-2">
                           <div class="custom-control  mb-1">
                             <label class="custom-control-label" for="category1">Payment Details </label>
-                            @if(empty($submission))
-                              <label class="bg-secondary rounded text-white text-center p-0">&nbsp; Not Entered &nbsp; </label>
-                            @else
-                              <label class="bg-success rounded text-white text-center p-0">&nbsp; Payment Details entered successfully &nbsp; </label>
-                            @endif
+                            
                           </div>
                           <div class="custom-control  mb-1">
                             <label class="custom-control-label" for="category2">Participant Mode</label>

@@ -11,6 +11,9 @@
 |
 */
 
+use App\Submission;
+use Illuminate\Support\Facades\Auth;
+
 Auth::routes();
 
 Route::get('auth/facebook', 'Auth\SocialiteController@redirectToFacebook')->name('auth-facebook');
@@ -31,7 +34,19 @@ Route::get('/{page}',function($page){
 });
 
 Route::get('/submissions/{page}',function($page){
-    if(\Auth::user()->participant_type != 'admin')
+    if($page=='home')
+    {
+        $submission = Submission::where('user_id',Auth::user()->id)->count();
+        if($submission==0)
+        {
+            return view("admin.payment");
+        }
+        else
+        {
+            return view("admin.home");
+        }
+    }
+    else if(\Auth::user()->participant_type != 'admin')
     return view("admin.$page");
     else
     return view("admin.approval");
