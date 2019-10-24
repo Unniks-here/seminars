@@ -11,7 +11,12 @@
     </div>
     <!-- End Page Header -->
     <!-- Small Stats Blocks -->
-    
+    @if ($message = Session::get('registermessage'))
+<div class="alert alert-primary alert-block">
+	<button type="button" class="close" data-dismiss="alert">×</button>	
+        <strong>{{ $message }}</strong>
+</div>
+@endif 
    <?php $submission = App\Submission::where('user_id',Auth::user()->id)->first();  ?>
 
         <div class="row">
