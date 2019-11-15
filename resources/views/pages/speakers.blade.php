@@ -23,31 +23,62 @@
                                 <hr>
                               </li>
                               <li><b>Dr. Gopinathan M. Anilkumar</b><br><font size="2"> 
-                                Noritake, Japan<br></font><hr>
+                                Noritake Co., Ltd., Japan<br></font><hr>
                               </li>
-                              <li><b>Dr. Takanori Tamaki</b><br><font size="2">
-                                Tokyo Institute of Technology, Japan<br></font><hr>
+                              <li><b>Prof. Paula M Vilarinho</b><br><font size="2">
+                                University of Aveiro, Portugal<br></font><hr>
                               </li>
                               <li><b>Prof. Suresh C Pillai</b><br><font size="2">
                                 Institute of Technology, Sligo, Ireland<br></font><hr>
                               </li>
-                              <li><b>Dr. Sindhuja Sankaran</b><br> <font size="2">
-                                Washington State University, USA<br> </font><hr>
-                              </li>
-                              <li><b>Prof. Rajan Jose</b><br><font size="2">
+                              <li><b>Prof. Rajan Jose</b><br> <font size="2">
                                 Universiti Malaysia Pahang, Malaysia<br> </font><hr>
                               </li>
-                              <li><b>Dr. KGK Warrier</b><br> <font size="2">
-                                CSIR-NIIST, Thiruvananthapuram, India<br> </font><hr>
+                              <li><b>Prof. Mohd Hasbi Ab Rahim</b><br><font size="2">
+                                Universiti Malaysia Pahang, Malaysia<br> </font><hr>
                               </li>
+                              <li><b>Dr. Balagopal N. Nair</b><br> <font size="2">
+                                Noritake Co., Ltd., Japan<br> </font><hr>
+                              </li>
+                              <li><b>Dr. Takanori Tamaki</b><br><font size="2">
+                                Tokyo Institute of Technology, Japan<br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Praveen Sarojam</b><br><font size="2">
+                                Gulf Bio Analytical LLC, UAE<br> </font><hr>
+                              </li> 
+                              <li><b>Dr. KGK Warrier</b><br><font size="2">
+                                CSIR-NIIST, Thiruvananthapuram, India <br> </font><hr>
+                              </li> 
+                              
                               <li><b>Dr. Sujatha Devi</b><br><font size="2">
                                 CSIR-NIIST, Thiruvananthapuram, India<br> </font><hr>
                               </li> 
-                              <li><b>Dr. Paresh L. Dhepe</b><br><font size="2">
+                              <li><b>Dr. Paresh L Dhepe</b><br><font size="2">
                                 NCL, Pune, India<br> </font><hr>
                               </li> 
                               <li><b>Dr. Mahesh Hariharan</b><br><font size="2">
                                 IISER, Thiruvananthapuram, India<br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Sudarshan Kurmar. K</b><br><font size="2">
+                                IIT Guwahati, India<br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Shajesh P</b><br><font size="2">
+                                Jain University, Bangalore, India<br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Nandini Devi. R</b><br><font size="2">
+                                NCL, Pune, India  <br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Pramod Pillai</b><br><font size="2">
+                                IISER, Pune, India <br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Suraj Somon</b><br><font size="2">
+                                CSIR-NIIST, Thiruvananthapuram, India <br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Bibin John</b><br><font size="2">
+                                VSSC, Thiruvananthapuram, India <br> </font><hr>
+                              </li> 
+                              <li><b>Dr. Prathish K P</b><br><font size="2">
+                                CSIR-NIIST, Thiruvananthapuram, India<br> </font><hr>
                               </li> 
                             </ul>
                     </div>

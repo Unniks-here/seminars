@@ -162,7 +162,7 @@
 					<tr><td><b style="color: #26ad6d;">Abstract submission	</b><br><font size="3"><i> Up to 1<sup>st</sup>  November, 2019</i></font>  </td></tr>
 					<tr><td><b style="color: #26ad6d;">Paper acceptance intimation	</b><br><font size="3"><i> 10<sup>th</sup>  November, 2019</i></font>  </td></tr>
 					<tr><td><b style="color: #26ad6d;">Full papers submission	</b><br><font size="3"><i> Up to 30<sup>th</sup> November, 2019</i></font>  </td></tr>
-					<tr><td><b style="color: #26ad6d;">Early bird registration	</b><br><font size="3"><i> Up to 15<sup>th</sup> November, 2019</i></font>  </td></tr>
+					<tr><td><b style="color: #26ad6d;">Early bird registration	</b><br><font size="3"><i> Up to 30<sup>th</sup> November, 2019</i></font>  </td></tr>
 					<tr><td><b style="color: #26ad6d;">Conference days	</b><br><font size="3"><i> 12<sup>th</sup> to 14<sup>th</sup>  December, 2019</i></font>  </td></tr>
 				</table>
 			</div>
