@@ -13,7 +13,7 @@
 
 use App\Submission;
 use Illuminate\Support\Facades\Auth;
-
+use App\Exceptions\Handler;
 Auth::routes();
 
 Route::get('auth/facebook', 'Auth\SocialiteController@redirectToFacebook')->name('auth-facebook');
@@ -30,7 +30,12 @@ Route::get('/', function () {
 // Route::get('/home', 'HomeController@index');
 
 Route::get('/{page}',function($page){
+    try{
         return view("pages.$page");
+    }catch (Exception $e) {  
+        abort(404);
+        return false;
+    }
 });
 
 Route::get('/submissions/{page}',function($page){
@@ -47,7 +52,13 @@ Route::get('/submissions/{page}',function($page){
         }
     }
     else if(\Auth::user()->participant_type != 'admin')
-    return view("admin.$page");
+    try{
+        return view("admin.$page");
+    }catch (Exception $e) {  
+        abort(404);
+        return false;
+    }
+    
     else
     return view("admin.approval");
 });
