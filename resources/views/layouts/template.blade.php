@@ -54,7 +54,7 @@
                 drop-shadow(-2px 2px 0 white)
                 drop-shadow(2px -2px 0 white)
                 drop-shadow(-2px -2px 0 white);
-
+margin-top: 10px; ;
 filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)         drop-shadow(1px -1px 0 white)         drop-shadow(-1px -1px 0 white);
     }
 	header.masthead{
@@ -117,7 +117,8 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
                 drop-shadow(-2px 2px 0 white)
                 drop-shadow(2px -2px 0 white)
                 drop-shadow(-2px -2px 0 white);
-
+      margin-top: 10px;
+      padding-left: 5px !important;
 filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)         drop-shadow(1px -1px 0 white)         drop-shadow(-1px -1px 0 white);
     }
 	header.masthead{
@@ -253,7 +254,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
        
   
   <!-- Services Section -->
-  <section class="page-section" id="home" style="padding: 3rem 0;">
+  <section class="page-section" id="home" style="margin-top: 10px;">
     @yield('content')
   </section>
   

@@ -49,6 +49,13 @@
                               <li><b>Dr. KGK Warrier</b><br><font size="2">
                                 CSIR-NIIST, Thiruvananthapuram, India <br> </font><hr>
                               </li> 
+                            </ul>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <hr class="divider light my-4">
+                          
+                                <ul style="list-style: none;">
+                                   
                               
                               <li><b>Dr. Sujatha Devi</b><br><font size="2">
                                 CSIR-NIIST, Thiruvananthapuram, India<br> </font><hr>
@@ -80,52 +87,8 @@
                               <li><b>Dr. Prathish K P</b><br><font size="2">
                                 CSIR-NIIST, Thiruvananthapuram, India<br> </font><hr>
                               </li> 
-                            </ul>
-                    </div>
-                    <div class="col-sm-6 ">
-                        <hr class="divider light my-4">
-                          
-                                <ul style="list-style: none;">
-                                    <li><b>Dr. Sudarshan Kurmar</b><br><font size="2">
-                                      K, IIT Guwahati, India<br></font><hr>
-                                    </li>
-                                    <li><b>Dr. Shajesh P</b><br><font size="2">
-                                      Jain University, Bangalore, India<br></font><hr>
-                                    </li>
-                                  <li><b>Dr. Nandini Devi. R</b><br><font size="2">
-                                    NCL, Pune, India<br></font><hr>
-                                    
-                                  </li>
-                                  <li><b>Dr. Suraj Somon</b><br><font size="2">
-                                    CSIR-NIIST, Thiruvananthapuram, India<br></font><hr>
-                                    
-                                  </li>
-                                  <li><b>Dr. Bibin John</b><br><font size="2">
-                                    VSSC, Thiruvananthapuram, India<br></font><hr>
-                                    
-                                  </li>
-                                  <li><b>Dr. Rajesh Parishwad</b><br><font size="2">
-                                    Royal Society of Chemistry, India<br></font><hr>
-                                    
-                                  </li>
-                                  <li><b>Prof. Youssef Belmabkhout </b><br><font size="2">
-                                    Mohamed VI Polytechnic University, Morocco<br></font><hr>
                                      
-                                  </li>
-                                  <li><b>Dr. Praveen Sarojam</b><br><font size="2">
-                                    Gulf Bio Analytical LLC, UAE<br></font><hr>
-                                     
-                                  </li>
-                                  <li><b>Prof. Mohd Hasbi Ab Rahim</b><br><font size="2">
-                                    Universiti Malaysia Pahang, Malaysia<br></font><hr>
-                                    
-                                  </li>
-                                  <li><b>Dr. Lav R. Khot</b><br><font size="2">
-                                    Washington State University, USA<br></font><hr>
-                                    
-                                  </li>
-                                     
-                                </ol>
+                                </ul>
                         </div>
                   </div>
           
