@@ -23,7 +23,7 @@
             <img style="" class="img_logo" width="100" src="{{asset('img/aip.png')}}">
             
             <img class="img_logo" style="width:100px !important; height:50px !important" src="{{asset('img/Elesevier_Logo.svg')}}">
-            <img class="img_logo" style="width:100px !important; height:50px !important" src="{{asset('img/ijmr.png')}}">
+            <img class="img_logo" style="width:100px !important; height:50px !important" src="{{asset('img/ijmr.PNG')}}">
             <img class="img_logo" style="width:100px !important; height:50px !important; padding-left: 5px !important;" src="{{asset('img/hanser.jpg')}}">
         </div>
         <div class="col-sm-2">
@@ -50,7 +50,7 @@
             -webkit-text-stroke: white;
             -webkit-text-stroke-width: thin;
             ">Sponsors</span></b><br>
-          <img class="img_logo" style="width:79px !important; height:50px !important;"  src="{{asset('img/kase.png')}}">
+          <img class="img_logo" style="width:79px !important; height:50px !important;"  src="{{asset('img/kase.PNG')}}">
       </div>
         </div> 
         </div>
