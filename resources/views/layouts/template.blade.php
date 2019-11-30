@@ -65,6 +65,27 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
 		<!-- background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E"); -->
 		background-attachment: fixed;
 	}
+
+  .logo_background1{
+    /* background-color: #0d3d1f; */
+    padding-bottom: inherit;
+    padding-top: 5px;
+  }
+  .logo_background2{
+    /* background-color: #6d3d1f; */
+    padding-bottom: inherit;
+    padding-top: 5px;
+  }
+  .logo_background3{
+    /* background-color: #0dfd1f; */
+    padding-bottom: inherit;
+    padding-top: 5px;
+  }
+  .logo_background4{
+    /* background-color: #0d3dff; */
+    padding-bottom: inherit;
+    padding-top: 5px;
+  }
 	@media (min-width: 992px){
 			#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
 			color: #8BC34A;
@@ -150,12 +171,16 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
 	#mainNav .navbar-nav .nav-item .nav-link.active {
 		color: #5dad00!important;
 	}
+  /* .page-section {
+    padding: 12rem 0;
+  } */
 	@media (min-width: 992px){
 		header.masthead {
 			height: 40vh;
 			min-height: 15rem;
 			padding-top: 72px;
 			padding-bottom: 0;
+      /* padding: 12rem 0; */
 		}
 	}
 	.border_table td{
@@ -167,9 +192,9 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
   <style>
     @media only screen and (max-width: 600px) {
   .sponsers{
-    position: absolute;
-    width: 95%;
-    bottom: -80px;
+    /* position: absolute; */
+    /* width: 95%; */
+    /* bottom: -80px; */
   }
   }
   </style>
@@ -254,7 +279,7 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
        
   
   <!-- Services Section -->
-  <section class="page-section" id="home" style="margin-top: 10px;">
+  <section class="page-section" id="home" >
     @yield('content')
   </section>
   
