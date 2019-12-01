@@ -197,6 +197,9 @@ filter: drop-shadow(1px 1px 0 white)         drop-shadow(-1px 1px 0 white)      
     /* bottom: -80px; */
   }
   }
+  .page-section {
+  padding: 4rem 0;
+}
   </style>
   @yield('css')
 </head>
