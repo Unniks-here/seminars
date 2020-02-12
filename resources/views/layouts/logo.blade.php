@@ -41,6 +41,7 @@
     display: -webkit-inline-box;">Sponsors</span></b><br>
           <img class="img_logo" style="width:79px !important; height:50px !important;"  src="{{asset('img/kase.PNG')}}">
           <img class="img_logo" style="width: 120px !important; background-color: white; margin: 5px;"  src="{{asset('img/Axis_Bank_Logo.png')}}">
+          <img class="img_logo" style="width: 120px !important; background-color: white; margin: 5px;"  src="{{asset('img/Central-Bank-Of-India-1.jpg')}}">
       </div>
         </div>
         </div>
